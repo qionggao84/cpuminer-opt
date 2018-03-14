@@ -3,7 +3,7 @@
 
 #include <stdint.h>
 
-bool register_argon2d_algo( algo_gate_t* gate );
+bool register_argon2d_algo( algo_gate_t*);
 
 void argon2d_hash( void *state, const void *input );
 
