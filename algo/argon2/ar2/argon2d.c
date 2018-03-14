@@ -2,7 +2,6 @@
 #include "algo-gate-api.h"
 #include "avxdefs.h"
 #include "argon2.h"
-#include "argon2d.h"
 
 static const size_t INPUT_BYTES = 80;  // Lenth of a block header in bytes. Input Length = Salt Length (salt = input)
 static const size_t OUTPUT_BYTES = 32; // Length of output needed for a 256-bit hash
