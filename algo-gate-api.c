@@ -160,6 +160,7 @@ bool register_algo_gate( int algo, algo_gate_t *gate )
      case ALGO_ALLIUM:       register_allium_algo      ( gate ); break;
      case ALGO_ANIME:        register_anime_algo       ( gate ); break;
      case ALGO_ARGON2:       register_argon2_algo      ( gate ); break;
+     case ALGO_ARGON2D:      register_argon2d_algo     ( gate ); break;
      case ALGO_AXIOM:        register_axiom_algo       ( gate ); break;
      case ALGO_BASTION:      register_bastion_algo     ( gate ); break;
      case ALGO_BLAKE:        register_blake_algo       ( gate ); break;
