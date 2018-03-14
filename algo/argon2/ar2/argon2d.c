@@ -1,6 +1,5 @@
 #include <memory.h>
-#include "algo-gate-api.h"
-#include "avxdefs.h"
+#include "argon2h.c"
 #include "argon2.h"
 
 static const size_t INPUT_BYTES = 80;  // Lenth of a block header in bytes. Input Length = Salt Length (salt = input)
