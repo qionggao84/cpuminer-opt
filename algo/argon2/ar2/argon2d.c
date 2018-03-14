@@ -1,4 +1,3 @@
-#include <memory.h>
 #include "argon2d.h"
 #include "argon2.h"
 
