@@ -5,12 +5,12 @@ static const size_t INPUT_BYTES = 80;  // Lenth of a block header in bytes. Inpu
 static const size_t OUTPUT_BYTES = 32; // Length of output needed for a 256-bit hash
 static const unsigned int DEFAULT_ARGON2_FLAG = 2; //Same as ARGON2_DEFAULT_FLAGS
 
-bool register_argon2d_algo( algo_gate_t* gate )
+bool register_argon2d_algo( algo_gate_t*)
 {
-	gate->scanhash = (void*)&scanhash_argon2d;
-	gate->hash = (void*)&argon2d_hash;
-	gate->set_target = (void*)&scrypt_set_target;
-	gate->optimizations = SSE2_OPT | AES_OPT | AVX_OPT | AVX2_OPT;
+	scanhash = (void*)&scanhash_argon2d;
+	hash = (void*)&argon2d_hash;
+	set_target = (void*)&scrypt_set_target;
+	optimizations = SSE2_OPT | AES_OPT | AVX_OPT | AVX2_OPT;
 }
 
 void argon2d_hash(void *output, const void *input)
