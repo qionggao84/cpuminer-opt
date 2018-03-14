@@ -485,6 +485,7 @@ enum algos {
         ALGO_ALLIUM,
         ALGO_ANIME,
         ALGO_ARGON2,
+	ALGO_ARGON2D,
         ALGO_AXIOM,       
         ALGO_BASTION,
         ALGO_BLAKE,       
@@ -561,6 +562,7 @@ static const char* const algo_names[] = {
         "allium",
         "anime",
         "argon2",
+	"argon2d",
         "axiom",
         "bastion",
         "blake",
@@ -696,6 +698,7 @@ Options:\n\
                           allium       Garlicoin (GRLC)\n\
                           anime        Animecoin (ANI)\n\
                           argon2\n\
+			  argon2d	Credits\n\
                           axiom        Shabal-256 MemoHash\n\
                           bastion\n\
                           blake        blake256r14 (SFR)\n\
