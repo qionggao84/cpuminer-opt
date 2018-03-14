@@ -1,7 +1,6 @@
 #ifndef ARGON2D_H__
 #define ARGON2D_H__
 
-#include "algo-gate-api.h"
 #include <stdint.h>
 
 bool register_argon2d_algo( algo_gate_t* gate );
